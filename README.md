@@ -8,13 +8,13 @@ Tugas Workshop Deep Learning — Teknik Telekomunikasi ITERA.
 
 | Peran | Nama | NIM |
 |---|---|---|
-| Ketua | [Nama Lengkap] | [NIM] |
-| Anggota | [Nama Lengkap] | [NIM] |
-| Anggota | [Nama Lengkap] | [NIM] |
+| Ketua | [Bella Rizki Amalia] | [124400063] |
+| Anggota | [Chelsy Enix Zeanventa] | [124400093] |
+| Anggota | [Fella Putri Ardhia] | [124400007] |
 
-- **Kelas:** [RA / RB]
-- **Lokasi kelompok:** [kode] — [nama lokasi] (digit terakhir NIM terkecil)
-- **Laporan:** [`laporan-latex/main.pdf` atau `laporan-typst/main.pdf`]
+- **Kelas:** [RA]
+- **Lokasi kelompok:** [0] — [Università Bicocca] (digit terakhir NIM terkecil)
+- **Laporan:** [`laporan-latex/main.pdf`]
 
 ## Cara Menjalankan
 
@@ -25,11 +25,10 @@ uv run jupyter lab
 
 Buka `tugas_ablasi.ipynb`, isi `LOKASI_KELOMPOK`, lalu jalankan semua sel. Semua run tercatat di `hasil/ablasi.csv`.
 
-Perangkat yang kami pakai: [contoh: laptop CPU Intel i5 / Google Colab T4], total waktu training: [x] menit.
+Perangkat yang kami pakai: [Perangkat yang kami pakai: Laptop (Intel Core i3-8145U / Intel Core i3-1215U / AMD Ryzen 5 7520U) dan Google Colab T4 GPU], total waktu training: [67,5] menit.
 
 ## Ringkasan Hasil
-
-[2–4 kalimat temuan utama, beserta angka test MAE terbaik per model.]
+Eksperimen ablasi menunjukkan bahwa model rekuren (RNN dan GRU) secara konsisten mengungguli baseline ANN dalam memprediksi trafik seluler per jam. Pada area Duomo, model RNN mencapai Test MAE terbaik sebesar 229,60 ± 5,05, disusul oleh GRU (237,16 ± 9,32), LSTM (273,56 ± 25,36), dan ANN (314,28 ± 10,45). Pengujian generalisasi pada Lokasi 7 (Università Bicocca) mengonfirmasi kestabilan hierarki model dengan Test MAE terbaik dicapai oleh RNN sebesar 47,83 ± 2,86.
 
 ## Struktur
 
